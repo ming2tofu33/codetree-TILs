@@ -9,8 +9,8 @@ for i in range(1, n +1):
         nd.add(i)
 
 for j in range(1, m +1):
-    if n % j == 0:
-        nd.add(j)
+    if m % j == 0:
+        md.add(j)
 
 gcd = max(nd & md)
 
