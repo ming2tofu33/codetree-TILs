@@ -1,7 +1,12 @@
 n = int(input())
 
 # Please write your code here.
-def sum_1_to_n_div10(n):
-    print(sum(list(range(1, n+1))) // 10)
+def sum_n(n):
+    sum_val = 0
+    for i in range(1, n + 1):
+        sum_val += i
+    
+    return sum_val // 10
 
-sum_1_to_n_div10(n)
+
+print(sum_n(n))
