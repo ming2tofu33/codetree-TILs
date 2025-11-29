@@ -10,7 +10,7 @@ def operation(x, o, y):
     elif o == '-':
         return f'{x} - {y} = {x - y}'
     elif o == '/':
-        return f'{x} / {y} = {x / y}'
+        return f'{x} / {y} = {int(x / y)}'
     elif o == '*':
         return f'{x} * {y} = {x * y}'
     else:
