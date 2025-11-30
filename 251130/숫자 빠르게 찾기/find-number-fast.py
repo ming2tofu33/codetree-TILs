@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 n, m = map(int, input().split())
 arr = list(map(int, input().split()))
 queries = [int(input()) for _ in range(m)]
