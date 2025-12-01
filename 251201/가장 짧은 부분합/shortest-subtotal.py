@@ -20,4 +20,4 @@ while True:
     else:
         break
 
-print(0 if min_len == INF else min_len)
+print(-1 if min_len == INF else min_len)
