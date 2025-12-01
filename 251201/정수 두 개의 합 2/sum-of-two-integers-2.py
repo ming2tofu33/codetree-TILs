@@ -1,0 +1,12 @@
+n, k = map(int, input().split())
+arr = [int(input()) for _ in range(n)]
+
+# Please write your code here.
+cnt = 0
+
+for i in range(n):
+    for j in range(i,n):
+        if arr[i] + arr[j] < k:
+            cnt +=1
+
+print(cnt)
