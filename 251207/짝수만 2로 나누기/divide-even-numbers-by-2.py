@@ -6,7 +6,7 @@ arr = list(map(int, input().split()))
 def modify_arr(arr):
     for i in range(len(arr)):
         if arr[i] % 2 == 0:
-            arr[i] = arr[i] // 2
+            arr[i] //=  2
     
     return arr
 
