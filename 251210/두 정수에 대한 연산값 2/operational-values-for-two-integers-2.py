@@ -3,7 +3,13 @@ a, b = map(int, input().split())
 # Please write your code here.
 
 def calculate(a, b):
-    a, b = min(a, b) + 10, max(a, b) * 2
+    if a > b:
+        a *= 2
+        b += 10
+    else:        
+        b *= 2
+        a += 10
+
     return a, b
 
 a, b = calculate(a, b)
