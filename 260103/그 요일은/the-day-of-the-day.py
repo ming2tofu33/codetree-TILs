@@ -19,6 +19,6 @@ while True:
         date[0] += 1
         date[1] = 1
 
-cnt = total_days // 7 + (day_of_week[A] > total_days % 7)
+cnt = total_days // 7 + (day_of_week[A] <= total_days % 7)
 
 print(cnt)
