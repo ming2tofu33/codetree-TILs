@@ -21,4 +21,4 @@ for _ in range(n):
         loc += x - 1
 
 print(tiles.count(1), tiles.count(0))
-print(tiles[99990:])
+# print(tiles[99990:])
