@@ -1,0 +1,24 @@
+MAX_V = 1000 * 100 * 2
+OFFSET = 1000 * 100
+
+tiles = [-1] * (MAX_V + 1)
+
+n = int(input())
+loc = OFFSET + 1
+
+for _ in range(n):
+    x, cmd = input().split()
+    x = int(x)
+    if cmd == 'L':
+        for i in range(loc, loc - x, -1):
+            if tiles[i] == 0 or tiles[i] == -1:
+                tiles[i] = 1
+        loc -= x + 1
+    else:
+        for i in range(loc, loc + x):
+            if tiles[i] or tiles[i] == -1:
+                tiles[i] = 0
+        loc += x - 1
+
+print(tiles.count(1), tiles.count(0))
+print(tiles[99990:])
