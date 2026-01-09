@@ -10,8 +10,7 @@ for i in range(n):
         cur_num = arr[i]
         cnt = 1
     else:
-        if cur_num == arr[i]:
-            cnt += 1
+        cnt += 1
         if cnt > max_cnt:
             max_cnt = cnt
 
